@@ -1,4 +1,3 @@
-#lang scheme
 #|
 https://stackoverflow.com/questions/1485022/sicp-making-change
 |#
@@ -19,5 +18,3 @@ https://stackoverflow.com/questions/1485022/sicp-making-change
         ((= n 3) 10)
         ((= n 4) 25)
         ((= n 5) 50)))
-
-(count-change 2000)
