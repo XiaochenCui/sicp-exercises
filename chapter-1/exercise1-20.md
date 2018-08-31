@@ -1,4 +1,4 @@
-为了书写方便，这里用 % 表示 % 函数
+为了书写方便，这里用 % 表示 remainder 函数
 
 # Normal order
 
@@ -18,7 +18,7 @@
 # Applicative order
 
 ```scheme
-(gcd 206 40)
+(gcd 206 40) ; Called once
 (gcd 40 6) ; Called once
 (gcd 6 4) ; Called once
 (gcd 4 2) ; Called once
@@ -26,4 +26,4 @@
 2
 ```
 
-一共调用了 remainder 函数 3 次
+一共调用了 remainder 函数 4 次
