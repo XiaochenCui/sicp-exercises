@@ -2,6 +2,7 @@
 
 (provide square)
 (provide safe-random)
+(provide print)
 
 (define (square n)
   (* n n))
@@ -11,3 +12,7 @@
   (if (< n max)
       (random n)
       (random max)))
+
+(define (print s)
+  (display s)
+  (newline))
