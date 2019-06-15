@@ -4,7 +4,7 @@
   (define (iter a result)
     (if (> a b)
         result
-        (iter (next a) (combiner (term a) result))))
+        (iter (next a) (combiner result (term a)))))
   (iter a null-value))
 
 (define (mut a b) (* a b))
@@ -38,7 +38,7 @@
 
 (define (accumulate-recu combiner null-value term a next b)
   (if (> a b)
-      1
+      null-value
       (combiner (term a) (accumulate combiner null-value term (next a) next b))))
 
 (define (product-recu term a next b)
