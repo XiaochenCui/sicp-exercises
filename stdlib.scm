@@ -3,6 +3,7 @@
 (provide square)
 (provide safe-random)
 (provide print)
+(provide nil)
 
 (define (square n)
   (* n n))
@@ -16,3 +17,5 @@
 (define (print s)
   (display s)
   (newline))
+
+(define nil '())
